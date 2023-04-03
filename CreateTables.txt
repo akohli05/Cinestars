@@ -1,0 +1,7 @@
+CREATE TABLE `custom_notes` (
+ `note_id` int(11) NOT NULL AUTO_INCREMENT,
+ `note_content` longtext NOT NULL,
+ `actor_id` int(11) NOT NULL,
+ `date_created` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+ PRIMARY KEY (`note_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1

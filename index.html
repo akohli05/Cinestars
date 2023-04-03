@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cinestars</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body>
+    
+    <header>
+		<a href="index.html" style="float: left; margin-right:700px;">
+			<img src="mainlogo.png" alt="Cinestars Logo">
+		</a>
+
+        <form  id="form">
+            <input type="text" placeholder="Search Actor" id="search" class="search">
+        </form>
+    </header>
+    <div id="tags"><h1>Popular</h1></div>
+    <div id="myNav" class="overlay">
+
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      
+        <!-- Overlay content -->
+        <div class="overlay-content" id="overlay-content"></div>
+        
+      </div>
+    <main id="main"></main>
+    <div class="pagination">
+        <div class="page" id="prev">Previous Page</div>
+        <div class="current" id="current">1</div>
+        <div class="page" id="next">Next Page</div>
+
+    </div>
+	
+	<footer>
+		<img src="credits.png" alt="TMDB credits">  
+	</footer>
+    <script src="script.js"></script>
+</body>
+</html>
